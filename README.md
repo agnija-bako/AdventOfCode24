@@ -8,7 +8,7 @@ Here, you'll witness two friends, **Stella** (the algorithm whisperer) and **Agn
 
 ## 🎯 **What’s This Repo About?**
 
-This is our cozy little corner of the internet where we stash our solutions for [Advent of Code 2024](https://adventofcode.com/). Think of it like a holiday gift exchange, but instead of socks and scarves, we’re swapping lines of **JavaScript**, **C#**, **Python**, and **Go**.  
+This is our cozy little corner of the internet where we stash our solutions for [Advent of Code 2024](https://adventofcode.com/). Think of it like a holiday gift exchange, but instead of socks and scarves, we’re swapping lines of **JavaScript**, **Go** or whatever language we’re vibing with that day.  
 
 Expect messy commits, creative approaches, and (probably) wildly different ways of solving the same problem.  
 

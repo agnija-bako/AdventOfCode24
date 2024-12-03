@@ -9,16 +9,28 @@ def is_safe_report(levels):
     return (is_increasing or is_decreasing) and check_difference
 
 def count_safe_reports(filename):
+
+    def problemer_dampener(levels):
+        #Check if removing 1 level will make the report safe
+        for i in range(len(levels)):
+            modified_levels = levels[:i] + levels[i + 1:]
+            if is_safe_report(modified_levels):
+                return True
+
+        return False
+
+
     count = 0
     with open(filename, 'r') as file:
         for line in file:
             if line.strip():
                 levels = [int(num) for num in line.split()]
-                if is_safe_report(levels):
+                if is_safe_report(levels) or problemer_dampener(levels):
                     count += 1
     return count
 
+
 filename = "input.txt"
 safe_reports = count_safe_reports(filename)
-print(safe_reports)
+print("Number of safe reports: ", safe_reports)
 

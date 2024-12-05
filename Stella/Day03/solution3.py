@@ -5,24 +5,22 @@ def find_mul(filename):
     with open(filename, 'r') as file:
         data = file.read()
 
+    #Regex to match instructions
     pattern = r"(mul\((\d+),(\d+)\)|don't\(\)|do\(\))"
     matches = re.findall(pattern, data)
 
-    #Calculate the sum of multiplications
     sum = 0
     enabled = True
 
     for match in matches:
         instruction, a ,b = match
         if instruction == "don't()":
-            enabled = False
+            enabled = False  # disable multiplications
         elif instruction == "do()":
-            enabled = True
+            enabled = True  # enable multipl
         elif instruction.startswith("mul") and enabled:
             sum += int(a) * int(b)
     return sum
-
-
 
 filename = "input.txt"
 result = find_mul(filename)

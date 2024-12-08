@@ -1,0 +1,53 @@
+﻿# Ignore Visual Studio temporary files, build results, and
+# Rider project-specific files
+
+###############################
+# .NET related ignores        #
+###############################
+
+# Build results
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider-specific files
+.idea/
+*.iml
+.idea_modules/
+
+# Logs
+*.log
+*.tlog
+
+# ASP.NET Scaffolding
+.scaffolding/
+
+# Visual Studio Code settings
+.vscode/
+
+###############################
+# Rider-specific ignores      #
+###############################
+
+# Rider settings
+.idea/
+.idea_modules/
+*.iml
+.idea/workspace.xml
+.idea/usage.statistics.xml
+.idea/dictionaries/
+.idea/sqlDataSources.xml
+.idea/dataSources/
+.idea/dataSources.local/
+.idea/shelf/
+.idea/markdown-navigator/
+
+# Rider project-specific files
+.idea/modules.xml
+.idea/misc.xml
+.idea/vcs.xml
